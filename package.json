@@ -1,14 +1,17 @@
-{ "name" : "crypto"
-, "author" : "Rhys <rhys@wave.to>"
-, "version" : "0.0.5"
- "dependencies": {
+{
+  "name": "crypto",
+  "author": "Rhys <rhys@wave.to>",
+  "version": "0.0.5",
+  "dependencies": {
     "nan": "^2.14.0"
-  }  
-, "scripts" :
-  { "preinstall" : "node-waf configure"
-  , "install" : "node-waf build"
-  , "test" : "node test.js"
+  },
+  "scripts": {
+    "preinstall": "node-waf configure",
+    "install": "node-waf build",
+    "test": "node test.js"
+  },
+  "main": "build/default/crypto",
+  "engines": {
+    "node": ">=12.0.0"
   }
-, "main" : "build/default/crypto"
-, "engines" : [ "node" ]
 }

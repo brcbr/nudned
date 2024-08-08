@@ -6,8 +6,8 @@
     "nan": "^2.14.0"
   },
   "scripts": {
-    "preinstall": "node-waf configure",
-    "install": "node-waf build",
+    "preinstall": "node-gyp configure",
+    "install": "node-gyp build",
     "test": "node test.js"
   },
   "main": "build/default/crypto",

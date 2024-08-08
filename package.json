@@ -1,6 +1,9 @@
 { "name" : "crypto"
 , "author" : "Rhys <rhys@wave.to>"
 , "version" : "0.0.5"
+ "dependencies": {
+    "nan": "^2.14.0"
+  }  
 , "scripts" :
   { "preinstall" : "node-waf configure"
   , "install" : "node-waf build"
